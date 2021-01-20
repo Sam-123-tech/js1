@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+    .container{
+        color: darkorange;
+        border: 10px solid firebrick;
+        background-color: forestgreen;
+        font-family: 'Dancing Script', cursive;
+    }
+    h1{
+        color: hotpink;
+        background-color: darkblue;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MY BEST FRIEND</h1>
+        <p>My best friend is the most special treasure in our lives. Among all my friends, Rahul is my best friend. We have been best friends since our pre-school days. He studies in my class and we sit on the same bench. He is the favourite student of my class teacher. He is very studious and scores well in all the exams. He is the tallest boy in our class. He is a very punctual and well-mannered boy. He respects teachers and elders.
+            I love going to his house. His father is very polite. He brings chocolates for Rahul and me. Rahul’s mother cooks tasty dishes for both of us. His parents encourage us to study hard and play well. He also has a puppy at his home. We play with his puppy whenever I go to his home.
+            At school, we go to the library and read our favourite books. We share our lunch boxes at school and play lots of games together in the playground. We write our homework together. He has brilliant handwriting. We love spending time with each other. We watch TV, listen to songs and play video games together.</p>
+    </div>
+    <script>
+        var string1 = "This is a string";
+    console.log(string1);
+    string1="This is not a string";
+    console.log(string1);
+    const a = "This cannot be changed";
+    //a = "I want to change this. This cannot be changed";
+    console.log(a);
+    let age = 32;
+    if(age>18){
+         console.log("You can drink water");
+     }
+    else if(age==2){
+        console.log("Age is 2")
+    }
+    else if(age==6){
+         console.log("Age is 6")
+     }
+    else{
+    console.log("You can drink Cold Drinks");
+    }
+    const cups = 4; 
+    switch (cups) {
+        case 4:
+            console.log("The value of cup is 4")
+            //break;
+        case 41:
+            console.log("The value of cup is 41")
+           //break;
+        case 42:
+            console.log("The value of cup is 42")
+            //break;
+        case 43:
+            console.log("The value of cup is 43")
+            //break;
+        default:
+            console.log("The value of cup is none of 4, 41, 42, 43")
+            //break;
+    }
+    </script>
+</body>
+</html>

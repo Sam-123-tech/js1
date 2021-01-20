@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+    .container{
+        color: deeppink;
+        border: 10px solid deepskyblue;
+        background-color: darkgreen;
+        font-family: 'Dancing Script', cursive;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RUSKIN BOND</h1>
+        <p>Mani’s Granny is seventy and can barely see through her old, scratched glasses. With only a hundred and fifty
+            rupees in their pocket and a thirst for adventure, Mani and Granny set off to buy a new pair. On the way,
+            they get drenched in rain, run into mules and encounter a terrible landslide. Will Granny ever be able to
+            reach the town and get herself a new pair of glasses? This beautifully illustrated edition brings alive the
+            magical charm of one of Ruskin Bond’s most unforgettable tales.</p>
+    </div>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+        //Last occurence of a substring
+        var position = str.lastIndexOf('is');
+        console.log(position);
+        //Substring from a string
+        var substr = str.slice(0, 14);
+        console.log(substr);
+        var substr = str.substring(1, 13);
+        console.log(substr);
+        var substr1 = str.substr(0, 4);
+        console.log(substr1);
+        var replaced = str.replace('string', 'Samridhi');
+        console.log(str);
+    console.log(replaced);
+        var replaced = str.replace('a', 'me,');
+    console.log(str);
+    console.log(replaced);
+    console.log(str.toUpperCase()); //FULL STRING WILL BE IN UPPER CASE
+    console.log(str.toLowerCase()); //full string will be in lower case
+    var newString = str.concat('New String');
+    console.log(newString);
+    var strWithWhitespaces = "        this contains        whitespaces   ";
+    console.log(strWithWhitespaces);
+    console.log(strWithWhitespaces.trim()); //triming the space from the begining and ending
+    var char2 = str.charAt(2);
+    console.log(char2)
+    console.log(str[3])
+    </script>
+</body>
+</html>
